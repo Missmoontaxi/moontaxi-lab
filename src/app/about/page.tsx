@@ -8,7 +8,7 @@ export default function About() {
             About Moontaxi Lab
           </h1>
           <p className="text-xl md:text-2xl text-nebula-cyan/80 font-light leading-relaxed">
-            Where you live to learn.
+            We live to learn.
           </p>
         </div>
       </section>
@@ -27,9 +27,9 @@ export default function About() {
             and business strategy, transforming complexity into competitive advantage.
           </p>
           <p className="text-star-white/70 leading-relaxed mt-6">
-            At Moontaxi Lab, our mission is to guide organizations through the
-            intersection of emerging technology and business strategy, transforming complexity
-            into competitive advantage.
+            At Moontaxi Lab, our mission is to guide organizations thrive through the
+            complex tech transformations that risk culture and business success.
+            
           </p>
         </div>
       </section>
@@ -78,7 +78,7 @@ export default function About() {
             <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
               <div className="text-3xl font-display text-nebula-cyan mb-4">01</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
-                Actionable
+                Strategic
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
                 Evidence-based strategy grounded in data and research, not hype.
@@ -93,8 +93,7 @@ export default function About() {
                 Connection
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                Human-centered technology that amplifies capabilities rather than replacing them.
-                than replacing them.
+                Human-centered solutions that amplifies capabilities rather than replacing them.
               </p>
             </div>
 
@@ -105,7 +104,7 @@ export default function About() {
                 Measurable
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                Practical implementation focused defining success and tracking
+                Practical execution focused on defining success and tracking
                 measurable outcomes.
               </p>
             </div>
@@ -124,8 +123,8 @@ export default function About() {
           </div>
           <p className="text-lg md:text-xl text-star-white/90 leading-relaxed mb-6">
             The name reflects our philosophy: ambitious destinations (the moon)
-            equire reliable transportation (the taxi). We bridge the gap between
-            visionary goals and practical execution.
+            require state of the art transportation (the taxi). We bridge the gap
+            between vision and execution.
           </p>
           <p className="text-star-white/70 leading-relaxed">
             
