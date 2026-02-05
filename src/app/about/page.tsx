@@ -18,7 +18,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-nebula-cyan" />
-            <h2 className="font-display text-sm tracking-[0.3em] text-nebula-cyan uppercase">
+            <h2 className="font-display text-lg md:text-xl tracking-[0.3em] text-nebula-cyan uppercase">
               Mission
             </h2>
           </div>
@@ -35,7 +35,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-nebula-cyan" />
-            <h2 className="font-display text-sm tracking-[0.3em] text-nebula-cyan uppercase">
+            <h2 className="font-display text-lg md:text-xl tracking-[0.3em] text-nebula-cyan uppercase">
               Background
             </h2>
           </div>
@@ -64,7 +64,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-nebula-cyan" />
-            <h2 className="font-display text-sm tracking-[0.3em] text-nebula-cyan uppercase">
+            <h2 className="font-display text-lg md:text-xl tracking-[0.3em] text-nebula-cyan uppercase">
               Approach
             </h2>
           </div>
@@ -114,7 +114,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-nebula-cyan" />
-            <h2 className="font-display text-sm tracking-[0.3em] text-nebula-cyan uppercase">
+            <h2 className="font-display text-lg md:text-xl tracking-[0.3em] text-nebula-cyan uppercase">
               Why Moontaxi Lab
             </h2>
           </div>
