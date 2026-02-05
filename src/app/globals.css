@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.google.com/specimen/Rationale?preview.text=Moontaxi%20Lab&specimen.preview.text=Moontaxi+Lab&categoryFilters=Feeling:%2FExpressive%2FStiff');
+@import url('https://fonts.googleapis.com/css2?family=Rationale&family=Inter:wght@300;400;500;600;700&display=swap');
+
 
 html {
   scroll-behavior: smooth;
