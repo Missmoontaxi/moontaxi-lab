@@ -8,7 +8,7 @@ export default function About() {
             About Moontaxi Lab
           </h1>
           <p className="text-xl md:text-2xl text-nebula-cyan/80 font-light leading-relaxed">
-            Where scientific rigor meets strategic vision.
+            Where you live to learn.
           </p>
         </div>
       </section>
@@ -23,7 +23,11 @@ export default function About() {
             </h2>
           </div>
           <p className="text-lg md:text-xl text-star-white/90 leading-relaxed">
-            [PLACEHOLDER: Your mission statement. Example: We help organizations navigate the
+            [We help organizations navigate the intersection of emerging technology 
+            and business strategy, transforming complexity into competitive advantage.]
+          </p>
+          <p className="text-star-white/70 leading-relaxed mt-6">
+            [At Moontaxi Lab, our mission is to guide organizations through the
             intersection of emerging technology and business strategy, transforming complexity
             into competitive advantage.]
           </p>
@@ -41,19 +45,19 @@ export default function About() {
           </div>
           <div className="space-y-6 text-star-white/80 leading-relaxed">
             <p>
-              [PLACEHOLDER: Your professional background. Example: With over two decades of
-              experience spanning biotechnology, entertainment, and technology sectors, I bring
-              a unique perspective to digital transformation.]
+              [With over two decades of experience spanning biotechnology, entertainment, and
+              technology sectors, I bring a unique perspective to digital transformation.
+           
             </p>
             <p>
-              [PLACEHOLDER: Key career highlights. Example: My journey includes leadership roles
-              at organizations like Disney, Yahoo, and pioneering biotech companies, where I led
-              teams through complex technological transitions.]
+              [My journey includes leadership roles at organizations like Disney, Yahoo, and pioneering 
+              biotech companies, where I led teams through complex technological transitions.
+              ]
             </p>
             <p>
-              [PLACEHOLDER: Current work. Example: Today, as a founding member of AI Collective,
-              I work at the forefront of AI adoption, helping organizations understand and
-              implement transformative technologies.]
+              [This diverse background equips me to understand the multifaceted challenges
+              organizations face today, enabling me to craft tailored strategies that drive
+              innovation and growth.]
             </p>
           </div>
         </div>
@@ -74,11 +78,11 @@ export default function About() {
             <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
               <div className="text-3xl font-display text-nebula-cyan mb-4">01</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
-                [Principle Title]
+                [Actionable]
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                [PLACEHOLDER: First core principle. Example: Evidence-based strategy grounded
-                in data and research, not hype.]
+                [Evidence-based strategy grounded in data and research, not hype.
+      
               </p>
             </div>
 
@@ -86,11 +90,11 @@ export default function About() {
             <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
               <div className="text-3xl font-display text-nebula-cyan mb-4">02</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
-                [Principle Title]
+                [Connection]
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                [PLACEHOLDER: Second core principle. Example: Human-centered technology that
-                amplifies capabilities rather than replacing them.]
+                Human-centered technology that amplifies capabilities rather than replacing them.
+                than replacing them.]
               </p>
             </div>
 
@@ -98,11 +102,11 @@ export default function About() {
             <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
               <div className="text-3xl font-display text-nebula-cyan mb-4">03</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
-                [Principle Title]
+                [Measurable]
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                [PLACEHOLDER: Third core principle. Example: Practical implementation focused
-                on measurable outcomes and sustainable change.]
+                [Practical implementation focused defining success and tracking
+                measurable outcomes.]
               </p>
             </div>
           </div>
@@ -119,15 +123,12 @@ export default function About() {
             </h2>
           </div>
           <p className="text-lg md:text-xl text-star-white/90 leading-relaxed mb-6">
-            [PLACEHOLDER: What makes you different. Example: The name reflects our philosophy:
-            ambitious destinations (the moon) require reliable transportation (the taxi). We
-            bridge the gap between visionary goals and practical execution.]
+            The name reflects our philosophy: ambitious destinations (the moon)
+            equire reliable transportation (the taxi). We bridge the gap between
+            visionary goals and practical execution.]
           </p>
           <p className="text-star-white/70 leading-relaxed">
-            [PLACEHOLDER: Additional context about your unique value proposition. Example:
-            Unlike traditional consultancies, we combine deep technical expertise with
-            executive-level business acumen, offering a rare blend of hands-on capability
-            and strategic insight.]
+            [
           </p>
         </div>
       </section>
@@ -139,8 +140,8 @@ export default function About() {
             Ready to explore what&apos;s possible?
           </h2>
           <p className="text-star-white/70 mb-8">
-            [PLACEHOLDER: Call to action text. Example: Let&apos;s discuss how Moontaxi Lab
-            can help your organization navigate the AI landscape.]
+            [Let&apos;s discuss how Moontaxi Lab can help you 
+            navigate the AI landscape.]
           </p>
           <a
             href="/contact"
