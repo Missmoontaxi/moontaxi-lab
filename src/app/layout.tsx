@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Rationale, Inter } from 'next/font/google'
+import Navigation from '@/components/Navigation'
 import './globals.css'
 
 const rationale = Rationale({
@@ -35,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${rationale.variable} ${inter.variable}`}>
       <body className="font-sans antialiased">
+        <Navigation />
         {children}
       </body>
     </html>
