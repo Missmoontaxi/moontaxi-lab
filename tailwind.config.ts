@@ -31,7 +31,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Big Shoulders Stencil', 'system-ui', 'sans-serif'],
+        display: ['Rationale', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 1.2s ease-out',
