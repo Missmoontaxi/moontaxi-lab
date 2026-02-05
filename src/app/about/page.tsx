@@ -128,7 +128,7 @@ export default function About() {
             visionary goals and practical execution.
           </p>
           <p className="text-star-white/70 leading-relaxed">
-            [
+            
           </p>
         </div>
       </section>
