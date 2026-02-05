@@ -30,8 +30,8 @@ const config: Config = {
         'helix-blue': '#4299e1',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Rationale', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-rationale)', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 1.2s ease-out',
