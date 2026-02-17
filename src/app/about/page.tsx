@@ -136,7 +136,7 @@ export default function About() {
             navigate the AI landscape.
           </p>
           <a
-            href="/contact"
+            href="mailto:hello@paulamcmahon.com"
             className="inline-block px-8 py-3 bg-nebula-teal text-star-white font-medium rounded-lg hover:bg-nebula-cyan transition-colors duration-300"
           >
             Get in Touch
