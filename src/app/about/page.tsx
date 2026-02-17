@@ -8,7 +8,7 @@ export default function About() {
             About Moontaxi Lab
           </h1>
           <p className="text-xl md:text-2xl text-nebula-cyan/80 font-light leading-relaxed">
-            We live to learn.
+            Take your best shot.
           </p>
         </div>
       </section>
@@ -23,12 +23,11 @@ export default function About() {
             </h2>
           </div>
           <p className="text-lg md:text-xl text-star-white/90 leading-relaxed">
-            We help organizations navigate the intersection of emerging technology 
-            and business strategy, transforming complexity into competitive advantage.
+            We help you navigate towards the future you envision by aligning values, culture, 
+            and business strategy. Get ready to turn AI transformation into a competitive advantage.
           </p>
           <p className="text-star-white/70 leading-relaxed mt-6">
-            At Moontaxi Lab, our mission is to guide organizations thrive through the
-            complex tech transformations that risk culture and business success.
+            At Moontaxi Lab, our mission is help turn bold technology into human-centered execution.
             
           </p>
         </div>
