@@ -72,7 +72,7 @@ export default function About() {
             <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
               <div className="text-3xl font-display text-nebula-cyan mb-4">01</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
-                Neo-Leadership
+                Neo Leadership
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
                 Modern, evidence based strategy grounded in data and research, not hype.
@@ -117,7 +117,7 @@ export default function About() {
           </div>
           <p className="text-lg md:text-xl text-star-white/90 leading-relaxed mb-6">
             Even the most ambitious destinations (Moonshot) still need a ride (Taxi).
-            We bridge the gap between vision and execution. Let's go!
+            We bridge the gap between vision and execution. Let&apos;s go!
           </p>
           <p className="text-star-white/70 leading-relaxed">
             
