@@ -8,7 +8,7 @@ export default function About() {
             About Moontaxi Lab
           </h1>
           <p className="text-xl md:text-2xl text-nebula-cyan/80 font-light leading-relaxed">
-            One Shot to your Future.
+            One Shot the Future.
           </p>
         </div>
       </section>
@@ -116,8 +116,8 @@ export default function About() {
             </h2>
           </div>
           <p className="text-lg md:text-xl text-star-white/90 leading-relaxed mb-6">
-            Even the most ambitious destinations (Moonshot) will still need a ride (Taxi).
-            We bridge the gap between vision and execution.
+            Even the most ambitious destinations (Moonshot) still need a ride (Taxi).
+            We bridge the gap between vision and execution. Let's go!
           </p>
           <p className="text-star-white/70 leading-relaxed">
             
