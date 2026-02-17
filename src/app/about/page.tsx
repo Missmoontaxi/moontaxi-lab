@@ -8,7 +8,7 @@ export default function About() {
             About Moontaxi Lab
           </h1>
           <p className="text-xl md:text-2xl text-nebula-cyan/80 font-light leading-relaxed">
-            Take your best shot.
+            One Shot to your Future.
           </p>
         </div>
       </section>
@@ -44,8 +44,9 @@ export default function About() {
           </div>
           <div className="space-y-6 text-star-white/80 leading-relaxed">
             <p>
-              Knowledge from complex cycles of digital transformation in biotech, entertainment,
-              and AI is used to bring clarity, calm, and human judgement to sharp, rapid change.
+              The Lab brings calm, clarity, and human judgment to sharp, rapid change. Forged from digital
+              transformation and deep experience in biotech, entertainment and AI.
+            
            
             </p>
             <p>
@@ -74,7 +75,7 @@ export default function About() {
                 Neo-Leadership
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                Evidence based, modern strategy grounded in data and research, not hype.
+                Modern, evidence based strategy grounded in data and research, not hype.
       
               </p>
             </div>
@@ -115,9 +116,8 @@ export default function About() {
             </h2>
           </div>
           <p className="text-lg md:text-xl text-star-white/90 leading-relaxed mb-6">
-            The name reflects our philosophy: ambitious destinations (the moon)
-            require state of the art transportation (the taxi). We bridge the gap
-            between vision and execution.
+            Even the most ambitious destinations (Moonshot) will still need a ride (Taxi).
+            We bridge the gap between vision and execution.
           </p>
           <p className="text-star-white/70 leading-relaxed">
             
