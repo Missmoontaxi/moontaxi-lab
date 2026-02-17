@@ -75,7 +75,7 @@ export default function About() {
                 Neo Leadership
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                Modern, evidence based strategy grounded in data and research, not hype.
+                Modern, evidence based strategy grounded in research and real experience, not hype.
       
               </p>
             </div>
