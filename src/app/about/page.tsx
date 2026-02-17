@@ -23,11 +23,11 @@ export default function About() {
             </h2>
           </div>
           <p className="text-lg md:text-xl text-star-white/90 leading-relaxed">
-            We help you navigate towards the future you envision by aligning values, culture, 
-            and business strategy. Get ready to turn your AI transformation into a competitive advantage.
+          We help you harvest bold tech into human progress. 
           </p>
           <p className="text-star-white/70 leading-relaxed mt-6">
-            At Moontaxi Lab, our mission is to harvest bold tech into human-centered progress.
+          At Moontaxi Lab, we transport you to the future you envision by aligning values, culture, 
+          and business strategy. Get ready to turn your AI transformation into a competitive advantage.
             
           </p>
         </div>
@@ -44,18 +44,13 @@ export default function About() {
           </div>
           <div className="space-y-6 text-star-white/80 leading-relaxed">
             <p>
-              Drawing from two decades of digital transformation in biotech, entertainment,
-              and AI, I bring calm, clarity and human judgement to complex world of change.
+              Knowledge from complex cycles of digital transformation in biotech, entertainment,
+              and AI is used to bring clarity, calm, and human judgement to sharp, rapid change.
            
             </p>
             <p>
-              My journey includes leadership roles at organizations like Disney, Yahoo, and innovative 
-              biotech companies, where I led teams through global technological transitions.
-
-            </p>
-            <p>
-              This diverse background enables me to understand the uniquely dynamic challenges facing 
-              us today, and how to craft strategies that are both visionary and practical. 
+              The team draws from leadership roles at organizations like Disney, Yahoo, and innovative 
+              biotech companies where high impact technology drove global business modernization. 
             </p>
           </div>
         </div>
@@ -76,10 +71,10 @@ export default function About() {
             <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
               <div className="text-3xl font-display text-nebula-cyan mb-4">01</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
-                Neo-Strategy
+                Neo-Leadership
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                Evidence based, modern guidance grounded in data and research, not hype.
+                Evidence based, modern strategy grounded in data and research, not hype.
       
               </p>
             </div>
