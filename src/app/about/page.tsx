@@ -24,10 +24,10 @@ export default function About() {
           </div>
           <p className="text-lg md:text-xl text-star-white/90 leading-relaxed">
             We help you navigate towards the future you envision by aligning values, culture, 
-            and business strategy. Get ready to turn AI transformation into a competitive advantage.
+            and business strategy. Get ready to turn your AI transformation into a competitive advantage.
           </p>
           <p className="text-star-white/70 leading-relaxed mt-6">
-            At Moontaxi Lab, our mission is help turn bold technology into human-centered execution.
+            At Moontaxi Lab, our mission is to harvest bold tech into human-centered progress.
             
           </p>
         </div>
@@ -44,19 +44,18 @@ export default function About() {
           </div>
           <div className="space-y-6 text-star-white/80 leading-relaxed">
             <p>
-              With over two decades of experience spanning biotechnology, entertainment, and
-              technology sectors, I bring a unique perspective to digital transformation.
+              Drawing from two decades of digital transformation in biotech, entertainment,
+              and AI, I bring calm, clarity and human judgement to complex world of change.
            
             </p>
             <p>
-              My journey includes leadership roles at organizations like Disney, Yahoo, and pioneering 
-              biotech companies, where I led teams through complex technological transitions.
+              My journey includes leadership roles at organizations like Disney, Yahoo, and innovative 
+              biotech companies, where I led teams through global technological transitions.
 
             </p>
             <p>
-              This diverse background equips me to understand the multifaceted challenges
-              organizations face today, enabling me to craft tailored strategies that drive
-              innovation and growth.
+              This diverse background enables me to understand the uniquely dynamic challenges facing 
+              us today, and how to craft strategies that are both visionary and practical. 
             </p>
           </div>
         </div>
@@ -77,10 +76,10 @@ export default function About() {
             <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
               <div className="text-3xl font-display text-nebula-cyan mb-4">01</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
-                Strategic
+                Neo-Strategy
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                Evidence-based strategy grounded in data and research, not hype.
+                Evidence based, modern guidance grounded in data and research, not hype.
       
               </p>
             </div>
@@ -92,7 +91,7 @@ export default function About() {
                 Connection
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                Human-centered solutions that amplifies capabilities rather than replacing them.
+                Human-centered solutions that amplifies capabilities and builds on strengths.
               </p>
             </div>
 
@@ -103,7 +102,7 @@ export default function About() {
                 Measurable
               </h3>
               <p className="text-star-white/70 text-sm leading-relaxed">
-                Practical execution focused on defining success and tracking
+                Practical execution focused on clearly defining success and tracking
                 measurable outcomes.
               </p>
             </div>
