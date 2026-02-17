@@ -7,7 +7,7 @@ export default function About() {
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-star-white mb-6">
             About Moontaxi Lab
           </h1>
-          <p className="text-xl md:text-2xl text-nebula-cyan/80 font-light leading-relaxed">
+          <p className="text-xl md:text-2xl text-nebula-cyan/80 font-light leading-relaxed animate-fade-in-delayed">
             One Shot the Future.
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function About() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Principle 1 */}
-            <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
+            <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50 transition-all duration-300 hover:-translate-y-2 hover:border-nebula-cyan/60 hover:shadow-[0_0_20px_rgba(79,209,197,0.15)]">
               <div className="text-3xl font-display text-nebula-cyan mb-4">01</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
                 Neo Leadership
@@ -81,7 +81,7 @@ export default function About() {
             </div>
 
             {/* Principle 2 */}
-            <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
+            <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50 transition-all duration-300 hover:-translate-y-2 hover:border-nebula-cyan/60 hover:shadow-[0_0_20px_rgba(79,209,197,0.15)]">
               <div className="text-3xl font-display text-nebula-cyan mb-4">02</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
                 Connection
@@ -92,7 +92,7 @@ export default function About() {
             </div>
 
             {/* Principle 3 */}
-            <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50">
+            <div className="p-6 border border-nebula-teal/30 rounded-lg bg-space-deep/50 transition-all duration-300 hover:-translate-y-2 hover:border-nebula-cyan/60 hover:shadow-[0_0_20px_rgba(79,209,197,0.15)]">
               <div className="text-3xl font-display text-nebula-cyan mb-4">03</div>
               <h3 className="text-lg font-semibold text-star-white mb-3">
                 Measurable

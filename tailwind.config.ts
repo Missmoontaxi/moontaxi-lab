@@ -35,6 +35,7 @@ const config: Config = {
       },
       animation: {
         'fade-in': 'fadeIn 1.2s ease-out',
+        'fade-in-delayed': 'fadeIn 1.2s ease-out 0.4s both',
         'float': 'float 6s ease-in-out infinite',
       },
       keyframes: {
