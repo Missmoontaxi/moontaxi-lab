@@ -192,7 +192,7 @@ export default function PeanutPage() {
       <div className={styles.container}>
         {/* TOC */}
         <nav className={styles.toc} aria-label="Table of contents">
-          <div className={styles.eyebrow}>The Order of Events</div>
+          <div className={styles.eyebrow}>Order of Events</div>
           <ol>
             <li><a href="#sec-0"><span>Ring Warming</span><span className={styles.duration}>pre-4:30</span></a></li>
             <li><a href="#sec-1"><span>Begin</span><span className={styles.duration}>~1 min</span></a></li>
@@ -239,13 +239,16 @@ export default function PeanutPage() {
         </Section>
 
         {/* 2 — Paddy's Entrance */}
-        <Section num="02" title={<>Begin &amp; Paddy&apos;s Entrance</>} duration="~1 minute" id="sec-2">
+        <Section num="02" title={<>Paddy&apos;s Entrance</>} duration="~1 minute" id="sec-2">
           <Paula>&ldquo;OK. Let&apos;s begin.&rdquo;</Paula>
           <MusicCue label="Music starts · Paddy's entrance">
             <Track>Chateau Lobby</Track> by Father John Misty
           </MusicCue>
           <Stage>All grandparents are seated.</Stage>
           <Stage>Paddy McMahon walks up with Kimmie &amp; Bubba. Greets grandparents.</Stage>
+          <MusicCue label="Music fades · Paddy's entrance">
+            <Track>Chateau Lobby</Track> by Father John Misty fades out
+          </MusicCue>
         </Section>
 
         {/* 3 — Processional */}
@@ -384,7 +387,6 @@ export default function PeanutPage() {
           <LegalCallout>
             The pronouncement is the legal act of marriage. The authority language and declaration cannot be cut.
           </LegalCallout>
-          <Stage>Take a breath. This is the finish line.</Stage>
           <Paula>&ldquo;Well now… You did it!&rdquo;</Paula>
           <Pause>pause</Pause>
           <Paula>
@@ -406,18 +408,7 @@ export default function PeanutPage() {
 
         {/* 9 — Kiss */}
         <Section num="09" title="First Kiss" duration="the moment" id="sec-9">
-          <div className={styles.optionBlock}>
-            <div className={styles.optionLabel}>Paula · Pick one in the moment</div>
-            <div className={styles.option}>
-              &ldquo;You may now seal your union with a kiss.&rdquo;{' '}
-              <span className={styles.optionTone}>Serious</span>
-            </div>
-            <div className={styles.optionOr}>or</div>
-            <div className={styles.option}>
-              &ldquo;No pressure, but everyone is expecting you to kiss now.&rdquo;{' '}
-              <span className={styles.optionTone}>Funny</span>
-            </div>
-          </div>
+          <Paula>&ldquo;You may now seal your union with a kiss.&rdquo;</Paula>
           <Stage>Paula steps back and away from the couple — give them space for the kiss and photos.</Stage>
           <Reaction>Applause</Reaction>
         </Section>
