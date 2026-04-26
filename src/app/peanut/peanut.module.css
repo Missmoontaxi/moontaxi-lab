@@ -15,6 +15,7 @@
   --cream: #EFE7D4;
   --cream-dim: #BDB29B;
   --cream-soft: #D8CCB5;
+  --ivory: #FCF8EE;
   --red-legal: #C67868;
   --applause: #8A9F8A;
 
@@ -376,18 +377,20 @@
 
 .music {
   display: flex;
-  align-items: flex-start;
-  gap: 14px;
+  align-items: center;
+  gap: 18px;
   margin: 20px 0;
-  padding: 16px 22px;
-  background: rgba(196, 162, 122, 0.08);
-  border-left: 3px solid var(--gold-bright);
+  padding: 20px 26px;
+  background: var(--ivory);
+  color: var(--emerald-deep);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(196, 162, 122, 0.25);
 }
 .music::before {
   content: '♪';
-  font-family: var(--font-instrument), serif;
-  font-size: 24px;
-  color: var(--gold-bright);
+  font-family: var(--font-cormorant), serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--gold-deep);
   line-height: 1;
   flex-shrink: 0;
 }
@@ -396,18 +399,19 @@
   font-size: 10px;
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: var(--gold-bright);
+  color: var(--gold-deep);
   display: block;
   margin-bottom: 4px;
 }
 .musicCueText {
   font-size: 17px;
-  color: var(--cream);
+  color: var(--emerald-deep);
   font-style: italic;
 }
 .musicCueText .track {
   font-style: normal;
-  color: var(--gold-bright);
+  color: var(--emerald);
+  font-weight: 500;
 }
 
 .pause {
@@ -693,7 +697,7 @@
   .paula::before, .eyebrow, .sectionDuration, .musicCueLabel, .placeholderTag { color: #A88659; }
   .musicCueText .track { color: #A88659; }
   .paula .line, .couple .line, .stage, .sectionTitle, .sectionNumber { color: #1a1a1a; }
-  .music { background: #f9f3e8; border-left-color: #A88659; }
+  .music { background: #f9f3e8; box-shadow: none; border: 1px solid #d4c8a8; }
   .legal { background: #fdf1ee; color: #8B3A2C; border-left-color: #C65A4D; }
   .legalLabel { color: #8B3A2C; }
   .placeholder { background: #fbf7ef; border-color: #A88659; }
