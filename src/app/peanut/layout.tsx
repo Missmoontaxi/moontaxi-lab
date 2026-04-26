@@ -18,12 +18,18 @@ const instrument = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.moontaxilab.com'),
   title: 'P&A · Ceremony Run of Show',
   description: 'Ceremony run of show for Paddy McMahon and Amanda Morrow. May 2, 2026, Madison WI.',
   robots: { index: false, follow: false },
+  alternates: {
+    canonical: 'https://www.moontaxilab.com/peanut',
+  },
   openGraph: {
     title: 'P&A · Ceremony Run of Show',
     description: 'May 2, 2026 · The Tinsmith, Madison WI.',
+    url: 'https://www.moontaxilab.com/peanut',
+    siteName: 'Moontaxi Lab',
     type: 'website',
   },
   twitter: {
