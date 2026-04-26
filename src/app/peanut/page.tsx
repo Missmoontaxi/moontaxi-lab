@@ -1,0 +1,483 @@
+import styles from './peanut.module.css'
+import BackToTop from './BackToTop'
+
+// ====================================================================
+// Component primitives — keep all the run-of-show building blocks here
+// so script edits stay close to the content.
+// ====================================================================
+
+function Paula({ children }: { children: React.ReactNode }) {
+  return (
+    <div className={styles.paula}>
+      <div className={styles.line}>{children}</div>
+    </div>
+  )
+}
+
+function Couple({ speaker, children }: { speaker: string; children: React.ReactNode }) {
+  return (
+    <div className={styles.couple} data-speaker={speaker}>
+      <div className={styles.line}>{children}</div>
+    </div>
+  )
+}
+
+function Stage({ children }: { children: React.ReactNode }) {
+  return <div className={styles.stage}>{children}</div>
+}
+
+function MusicCue({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className={styles.music}>
+      <div>
+        <span className={styles.musicCueLabel}>{label}</span>
+        <span className={styles.musicCueText}>{children}</span>
+      </div>
+    </div>
+  )
+}
+
+function Track({ children }: { children: React.ReactNode }) {
+  return <span className={styles.track}>{children}</span>
+}
+
+function Pause({ children = 'pause' }: { children?: React.ReactNode }) {
+  return <div className={styles.pause}>{children}</div>
+}
+
+function Reaction({ children }: { children: React.ReactNode }) {
+  return <div className={styles.reaction}>{children}</div>
+}
+
+function LegalCallout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className={styles.legal}>
+      <div>
+        <span className={styles.legalLabel}>Legally required</span>
+        {children}
+      </div>
+    </div>
+  )
+}
+
+function Section({
+  num,
+  title,
+  duration,
+  id,
+  children,
+}: {
+  num: string
+  title: React.ReactNode
+  duration: string
+  id: string
+  children: React.ReactNode
+}) {
+  return (
+    <article className={styles.section} id={id}>
+      <header className={styles.sectionHeader}>
+        <div className={styles.sectionNumber}>{num}</div>
+        <div className={styles.sectionTitle}>{title}</div>
+        <div className={styles.sectionDuration}>{duration}</div>
+      </header>
+      {children}
+    </article>
+  )
+}
+
+function Placeholder({
+  tag,
+  title,
+  children,
+  preview,
+}: {
+  tag: string
+  title: string
+  children: React.ReactNode
+  preview?: React.ReactNode
+}) {
+  return (
+    <div className={styles.placeholder}>
+      <div className={styles.placeholderTag}>{tag}</div>
+      <div className={styles.placeholderTitle}>{title}</div>
+      <div className={styles.placeholderBody}>{children}</div>
+      {preview && <div className={styles.placeholderPreview}>{preview}</div>}
+    </div>
+  )
+}
+
+function Callout({ label, children }: { label?: string; children: React.ReactNode }) {
+  return (
+    <div className={styles.callout}>
+      {label && <strong className={styles.calloutLabel}>{label}</strong>}
+      {children}
+    </div>
+  )
+}
+
+// ====================================================================
+// Page
+// ====================================================================
+
+export default function PeanutPage() {
+  return (
+    <div className={styles.peanut}>
+      {/* Art deco header */}
+      <header className={styles.decoHeader}>
+        <div className={styles.decoPattern} />
+        <div className={styles.decoTitle}>
+          <h1>Paddy &amp; Amanda</h1>
+          <div className={styles.subtitle}>May 2, 2026 · Madison, WI</div>
+        </div>
+      </header>
+      <div className={styles.goldRibbon} />
+
+      {/* Title strip */}
+      <section className={styles.rosLabel}>
+        <div className={styles.eyebrow}>Ceremony</div>
+        <h2>Run of Show</h2>
+        <div className={styles.detailsStrip}>
+          <div className={styles.detail}>
+            <div className={styles.label}>Date</div>
+            <div className={styles.value}>Saturday, May 2, 2026</div>
+          </div>
+          <div className={styles.detail}>
+            <div className={styles.label}>Ceremony</div>
+            <div className={styles.value}>4:30 PM</div>
+          </div>
+          <div className={styles.detail}>
+            <div className={styles.label}>Venue</div>
+            <div className={styles.value}>The Tinsmith · Madison, WI</div>
+          </div>
+          <div className={styles.detail}>
+            <div className={styles.label}>Officiant</div>
+            <div className={styles.value}>Paula McMahon</div>
+          </div>
+          <div className={styles.detail}>
+            <div className={styles.label}>Duration</div>
+            <div className={styles.value}>20–25 minutes</div>
+          </div>
+        </div>
+        <div className={styles.docStatus}>Draft v4 · For review · Last updated April 22, 2026</div>
+      </section>
+
+      <div className={styles.container}>
+        {/* TOC */}
+        <nav className={styles.toc} aria-label="Table of contents">
+          <div className={styles.eyebrow}>The Order of Events</div>
+          <ol>
+            <li><a href="#sec-0"><span>Ring Warming</span><span className={styles.duration}>pre-4:30</span></a></li>
+            <li><a href="#sec-1"><span>Welcome</span><span className={styles.duration}>~1 min</span></a></li>
+            <li><a href="#sec-2"><span>Paddy&apos;s Entrance</span><span className={styles.duration}>~1 min</span></a></li>
+            <li><a href="#sec-3"><span>Processional</span><span className={styles.duration}>3–5 min</span></a></li>
+            <li><a href="#sec-4"><span>Paula&apos;s Kickoff</span><span className={styles.duration}>1–2 min</span></a></li>
+            <li><a href="#sec-5"><span>Officiant Speech</span><span className={styles.duration}>2–3 min</span></a></li>
+            <li><a href="#sec-6"><span>Exchange of Vows</span><span className={styles.duration}>3–5 min</span></a></li>
+            <li><a href="#sec-7"><span>Exchange of Rings</span><span className={styles.duration}>~2 min</span></a></li>
+            <li><a href="#sec-8"><span>Pronouncement</span><span className={styles.duration}>~1 min</span></a></li>
+            <li><a href="#sec-9"><span>First Kiss</span><span className={styles.duration}>the moment</span></a></li>
+            <li><a href="#sec-10"><span>Closing Remarks</span><span className={styles.duration}>~30 sec</span></a></li>
+            <li><a href="#sec-11"><span>Recessional</span><span className={styles.duration}>as long as it takes</span></a></li>
+            <li><a href="#sec-12"><span>Marriage License</span><span className={styles.duration}>immediately after</span></a></li>
+          </ol>
+        </nav>
+
+        {/* Legend */}
+        <section className={styles.legend}>
+          <h3>How to read this document</h3>
+          <dl className={styles.legendGrid}>
+            <dt>Paula:</dt>
+            <dd>Paula speaks these words aloud to the room.</dd>
+            <dt>Paddy: / Amanda:</dt>
+            <dd>The couple speaks — vows, ring exchange, repeat-after-me.</dd>
+            <dt>♪ Music cue</dt>
+            <dd>Music starts or stops. Coordinate with DJ or playlist.</dd>
+            <dt>[ Stage direction ]</dt>
+            <dd>Movement, positioning, physical actions. Not spoken.</dd>
+            <dt>Applause · Cheer</dt>
+            <dd>Expected audience reactions. For pacing, not scripted.</dd>
+            <dt>— Pause —</dt>
+            <dd>Intentional beat. Let the moment land before continuing.</dd>
+            <dt className={styles.legendLegal}>● Legally required</dt>
+            <dd>Cannot be cut or significantly changed. Required by Wisconsin law.</dd>
+          </dl>
+          <div className={styles.feedbackNote}>
+            Read this through and flag anything that feels off, missing, or not-you.
+            <br />
+            The placeholders are decisions still to come. Everything else is moveable.
+          </div>
+        </section>
+
+        {/* 0 — Ring Warming */}
+        <Section num="00" title="Pre-ceremony · Ring Warming" duration="Before 4:30 PM" id="sec-0">
+          <Stage>Guests are arriving and finding seats.</Stage>
+          <Stage>Paula takes position at the front, center.</Stage>
+          <Paula>
+            &ldquo;Hello and welcome! Before we begin, I would like to introduce Sarah McMahon, Paddy and Amanda&apos;s
+            sister-in-law, who is today&apos;s keeper of the rings. We&apos;re going to start with an Irish wedding
+            tradition called the warming of the rings. This is to infuse the wedding bands that Paddy and Amanda will
+            place on each other&apos;s finger today with all the love and good wishes of everyone here in this room. The
+            rings will be passed around to each person — when it comes to you, please hold them and take a moment to
+            think of some love and positivity for the couple, then pass it on to the next person.&rdquo;
+          </Paula>
+          <Stage>Sarah supervises the rings&apos; passage through seated guests.</Stage>
+        </Section>
+
+        {/* 1 — Welcome */}
+        <Section num="01" title="Welcome" duration="~1 minute" id="sec-1">
+          <Stage>Paula in position at the front, center.</Stage>
+          <Paula>&ldquo;Good afternoon, friends, family, loved ones. Are we ready to get this magic started?&rdquo;</Paula>
+          <Stage>Beat — read the room.</Stage>
+          <Paula>
+            &ldquo;The couple asked to not have your phones out during the ceremony. Allow me to introduce Olivia and
+            Bryan, who will be doing a wonderful job taking photos and capturing all the great moments today, including
+            guests in the audience. There will be a media moment early in the ceremony, once everyone is up here, where
+            you can take pictures. After that, please put phones away for the rest of the ceremony.&rdquo;
+          </Paula>
+        </Section>
+
+        {/* 2 — Paddy's Entrance */}
+        <Section num="02" title={<>Begin &amp; Paddy&apos;s Entrance</>} duration="~1 minute" id="sec-2">
+          <Paula>&ldquo;OK. Let&apos;s begin.&rdquo;</Paula>
+          <MusicCue label="Music starts · Paddy's entrance">
+            <Track>Chateau Lobby</Track> by Father John Misty
+          </MusicCue>
+          <Stage>All grandparents are seated.</Stage>
+          <Stage>Paddy McMahon walks up with Kimmie &amp; Bubba. Greets grandparents.</Stage>
+        </Section>
+
+        {/* 3 — Processional */}
+        <Section num="03" title="Processional" duration="3–5 minutes" id="sec-3">
+          <Paula>&ldquo;Please welcome the wedding party.&rdquo;</Paula>
+          <MusicCue label="Music starts · Wedding party">
+            <Track>Dancing Queen</Track>
+          </MusicCue>
+          <ol className={styles.processionalList}>
+            <li>Danny McMahon with flower girl Libby Lou McMahon</li>
+            <li>Taylor Morrow (Brother of Honor) with Katelyn Hoffman</li>
+            <li>Alex Pogosky and Jack Ries</li>
+            <li>Lu Corporan and Lucas Heyvaert</li>
+            <li>Elizabeth Heckmüller and Krista Owens</li>
+            <li>Megan Meloon and Bailey O&apos;Malley</li>
+          </ol>
+          <MusicCue label="Music stops · Wedding party">
+            <Track>Dancing Queen</Track> fades out
+          </MusicCue>
+          <Paula>&ldquo;Please rise.&rdquo;</Paula>
+          <Stage>Guests stand.</Stage>
+          <MusicCue label="Music starts · Bride's entrance">
+            <Track>Archie, Marry Me</Track> by Alvvays · piano instrumental
+          </MusicCue>
+          <Stage>Amanda is escorted by both of her parents and proceeds up the aisle.</Stage>
+          <Stage>Paddy steps forward to receive Amanda.</Stage>
+          <Stage>Handshakes, hugs, kisses with Amanda&apos;s escort and family.</Stage>
+          <MusicCue label="Music stops · Bride's entrance">
+            <Track>Archie, Marry Me</Track> fades out
+          </MusicCue>
+          <Callout label="Media Moment">
+            This is the <em>only</em> time during the ceremony guests can have phones out.
+          </Callout>
+          <Paula>&ldquo;OK, now is the time to capture the moment.&rdquo;</Paula>
+          <Stage>Paddy and Amanda do a little pose.</Stage>
+          <Paula>
+            &ldquo;Remember to tuck those phones away for the rest of the ceremony. Please be seated and we&apos;ll get
+            started.&rdquo;
+          </Paula>
+          <Stage>Guests sit.</Stage>
+        </Section>
+
+        {/* 4 — Kickoff */}
+        <Section num="04" title="Paula's Kickoff" duration="1–2 minutes" id="sec-4">
+          <Placeholder
+            tag="Draft · In progress"
+            title="Paula is finishing this opening"
+            preview={
+              <>
+                <em>&ldquo;Thank you all for being here. I&apos;m Paula, Paddy&apos;s aunt and batting coach…&rdquo;</em>
+                <br />
+                <br />
+                <em>
+                  &ldquo;We are all here from wherever we&apos;ve traveled because Paddy and Amanda asked us to witness
+                  something special. Not just to attend a party. To be part of the moment these two look each other in
+                  the eye and say: this is the person. This is my person.&rdquo;
+                </em>
+                <br />
+                <br />
+                <Pause>pause</Pause>
+                <em>
+                  &ldquo;That matters. You being here matters. This room is full of everyone who loves them.&rdquo;
+                </em>
+              </>
+            }
+          >
+            The welcome remarks set the tone. Draft is close, not final. Preview below — full text coming soon.
+          </Placeholder>
+        </Section>
+
+        {/* 5 — Officiant Speech */}
+        <Section num="05" title="Officiant Speech" duration="2–3 minutes" id="sec-5">
+          <Placeholder
+            tag="Coming from Paula"
+            title="The speech lives here"
+            preview={
+              <em>
+                &ldquo;I&apos;ve known Paddy his whole life, and there are a few things that have always been true about
+                him…&rdquo;
+              </em>
+            }
+          >
+            Paula is still writing this. It&apos;s the personal heart of the ceremony — stories about Paddy and Amanda,
+            how they got here, and why this wedding matters to the people in the room. Full text will be shared with the
+            wedding party before the rehearsal.
+          </Placeholder>
+          <Stage>Sarah collects rings and passes them to Best Man, Danny, ahead of the vows.</Stage>
+        </Section>
+
+        {/* 6 — Vows */}
+        <Section num="06" title="Exchange of Vows" duration="3–5 minutes" id="sec-6">
+          <Paula>
+            &ldquo;Now we will hear words from the groom and the bride. Amanda, please start by sharing your
+            vows.&rdquo;
+          </Paula>
+          <Couple speaker="Amanda">Amanda reads her previously written vows to Paddy.</Couple>
+          <Pause>pause</Pause>
+          <Paula>&ldquo;Paddy.&rdquo;</Paula>
+          <Couple speaker="Paddy">Paddy reads his previously written vows to Amanda.</Couple>
+          <Pause>pause · let the emotion settle</Pause>
+          <Stage>As Paddy finishes, Best Man Danny McMahon prepares to present the rings.</Stage>
+        </Section>
+
+        {/* 7 — Rings */}
+        <Section num="07" title="Exchange of Rings" duration="~2 minutes" id="sec-7">
+          <LegalCallout>The ring exchange language is part of the legal ceremony. Do not significantly alter.</LegalCallout>
+          <Paula>&ldquo;We are now ready to exchange the rings.&rdquo;</Paula>
+          <Pause>pause</Pause>
+          <Callout>
+            A ring is a circle: no beginning, no end. It&apos;s made of something that doesn&apos;t fade. And every time
+            you look at it — on a hard day, on a wonderful day, on an ordinary Tuesday — it says the same thing:{' '}
+            <em>I meant it.</em>
+          </Callout>
+          <Paula>
+            &ldquo;Paddy, please repeat after me: Amanda — I give you this ring as a sign of my commitment to you.&rdquo;
+          </Paula>
+          <Stage>Paddy receives ring from Danny. Places ring on Amanda&apos;s finger.</Stage>
+          <Couple speaker="Paddy">&ldquo;Amanda, I give you this ring as a sign of my commitment to you.&rdquo;</Couple>
+          <Pause>pause</Pause>
+          <Paula>
+            &ldquo;Amanda, please repeat after me: Paddy — I give you this ring as a sign of my commitment to you.&rdquo;
+          </Paula>
+          <Stage>Amanda receives ring from Danny. Places ring on Paddy&apos;s finger.</Stage>
+          <Couple speaker="Amanda">&ldquo;Paddy, I give you this ring as a sign of my commitment to you.&rdquo;</Couple>
+          <Pause>pause · let that land</Pause>
+          <Stage>Paula smiles, stays relaxed, lets the moment breathe.</Stage>
+        </Section>
+
+        {/* 8 — Pronouncement */}
+        <Section num="08" title="Pronouncement" duration="~1 minute" id="sec-8">
+          <LegalCallout>
+            The pronouncement is the legal act of marriage. The authority language and declaration cannot be cut.
+          </LegalCallout>
+          <Stage>Take a breath. This is the finish line.</Stage>
+          <Paula>&ldquo;Well now… You did it!&rdquo;</Paula>
+          <Pause>pause</Pause>
+          <Paula>
+            &ldquo;Paddy and Amanda — you came here today as two people who love each other. You are leaving as
+            something much, much more.&rdquo;
+          </Paula>
+          <Paula>
+            &ldquo;Today, May 2nd, 2026, in front of your closest friends, family, and loved ones, and by the authority
+            vested in me by the State of Wisconsin…&rdquo;
+          </Paula>
+          <Pause>pause · hold this beat</Pause>
+          <div className={styles.paula}>
+            <div className={`${styles.line} ${styles.pronouncementBig}`}>
+              &ldquo;I now pronounce you <strong>husband and wife</strong>.&rdquo;
+            </div>
+          </div>
+          <Reaction>Guests cheer</Reaction>
+        </Section>
+
+        {/* 9 — Kiss */}
+        <Section num="09" title="First Kiss" duration="the moment" id="sec-9">
+          <div className={styles.optionBlock}>
+            <div className={styles.optionLabel}>Paula · Pick one in the moment</div>
+            <div className={styles.option}>
+              &ldquo;You may now seal your union with a kiss.&rdquo;{' '}
+              <span className={styles.optionTone}>Serious</span>
+            </div>
+            <div className={styles.optionOr}>or</div>
+            <div className={styles.option}>
+              &ldquo;No pressure, but everyone is expecting you to kiss now.&rdquo;{' '}
+              <span className={styles.optionTone}>Funny</span>
+            </div>
+          </div>
+          <Stage>Paula steps back and away from the couple — give them space for the kiss and photos.</Stage>
+          <Reaction>Applause</Reaction>
+        </Section>
+
+        {/* 10 — Closing */}
+        <Section num="10" title="Closing Remarks" duration="~30 seconds" id="sec-10">
+          <div className={styles.paula}>
+            <div className={styles.line}>
+              &ldquo;It is my absolute honor to present to you — for the <strong>first time</strong> as newlyweds —
+              <span className={styles.closingBig}>Paddy and Amanda!&rdquo;</span>
+            </div>
+          </div>
+          <Reaction>Guests cheer</Reaction>
+        </Section>
+
+        {/* 11 — Recessional */}
+        <Section num="11" title="Recessional" duration="as long as it takes" id="sec-11">
+          <MusicCue label="Music starts · Recessional">
+            <Track>Bad Mama Jama</Track>
+          </MusicCue>
+          <Stage>Paddy &amp; Amanda head down the aisle together.</Stage>
+          <Stage>Paddy and Amanda pause toward the end of the aisle to do a dip kiss or some other photo moment.</Stage>
+          <Stage>Both wedding parties follow in pairs.</Stage>
+          <Stage>
+            Paula exits last, or with the wedding parties — <em>to confirm.</em>
+          </Stage>
+          <Paula>
+            &ldquo;Thank you all for being here. Please make your way out the side doors to the solarium and bar for a
+            cocktail reception. Have the best night. See you on the dance floor.&rdquo;
+          </Paula>
+        </Section>
+
+        {/* 12 — Marriage License */}
+        <Section num="12" title="Marriage License" duration="immediately after" id="sec-12">
+          <LegalCallout>
+            Do not skip. Must happen immediately after the ceremony, before anyone leaves the venue.
+          </LegalCallout>
+          <ol className={styles.licenseSteps}>
+            <li>Paula signs the marriage license.</li>
+            <li>
+              Two witnesses sign: <strong>Alex Pogosky</strong> and <strong>Danny McMahon</strong>.
+            </li>
+            <li>Paddy &amp; Amanda sign.</li>
+            <li>
+              License is handed to the designated person for return to the Dane County Clerk within 3 business days.
+            </li>
+          </ol>
+          <Callout label="Updated Process">
+            Paula will photograph and email the marriage license to{' '}
+            <a href="mailto:rod.county.vitals@danecounty.gov">rod.county.vitals@danecounty.gov</a> within 72 hours of
+            the ceremony.
+          </Callout>
+          <Stage>
+            Right after this, Paddy and Amanda get a private 15 minutes together — either outside the venue or in the
+            bridal suite — before joining cocktail hour.
+          </Stage>
+        </Section>
+
+        {/* Footer */}
+        <footer className={styles.footer}>
+          <div className={styles.monogram}>P &amp; A</div>
+          <div className={styles.footerDivider} />
+          <div className={styles.footerDate}>5 · 2 · 2026</div>
+        </footer>
+      </div>
+
+      <BackToTop />
+    </div>
+  )
+}

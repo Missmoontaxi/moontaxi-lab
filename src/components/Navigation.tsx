@@ -6,6 +6,9 @@ import { usePathname } from 'next/navigation'
 export default function Navigation() {
   const pathname = usePathname()
 
+  // Special-project pages render their own chrome — skip the global nav.
+  if (pathname?.startsWith('/peanut')) return null
+
   const links = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
