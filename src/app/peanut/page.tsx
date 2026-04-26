@@ -200,7 +200,7 @@ export default function PeanutPage() {
             <li><a href="#sec-3"><span>Processional</span><span className={styles.duration}>3–5 min</span></a></li>
             <li><a href="#sec-4"><span>Media Moment</span><span className={styles.duration}>~30 sec</span></a></li>
             <li><a href="#sec-5"><span>Officiant Speech</span><span className={styles.duration}>~4 min</span></a></li>
-            <li><a href="#sec-6"><span>Exchange of Vows</span><span className={styles.duration}>3–5 min</span></a></li>
+            <li><a href="#sec-6"><span>Exchange of Vows</span><span className={styles.duration}>5+ min</span></a></li>
             <li><a href="#sec-7"><span>Exchange of Rings</span><span className={styles.duration}>~2 min</span></a></li>
             <li><a href="#sec-8"><span>Pronouncement</span><span className={styles.duration}>~1 min</span></a></li>
             <li><a href="#sec-9"><span>First Kiss</span><span className={styles.duration}>the moment</span></a></li>
@@ -344,7 +344,7 @@ export default function PeanutPage() {
         </Section>
 
         {/* 6 — Vows */}
-        <Section num="06" title="Exchange of Vows" duration="3–5 minutes" id="sec-6">
+        <Section num="06" title="Exchange of Vows" duration="5+ minutes" id="sec-6">
           <Paula>
             &ldquo;Now we will hear words from the groom and the bride. Amanda, please start by sharing your
             vows.&rdquo;
