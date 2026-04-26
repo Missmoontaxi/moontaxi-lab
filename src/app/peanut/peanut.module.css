@@ -43,45 +43,56 @@
   border-color: var(--gold-bright);
 }
 
-/* ==================== ART DECO HEADER ==================== */
-.decoHeader {
-  background: var(--emerald-deep);
-  height: 220px;
+/* ==================== HERO PHOTO ==================== */
+.heroPhoto {
   position: relative;
+  width: 100%;
+  aspect-ratio: 2880 / 1280;
   overflow: hidden;
+  background: var(--emerald-deep);
+}
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+  display: block;
+}
+
+/* ==================== FAN ORNAMENT ==================== */
+.fanOrnament {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto 28px;
+  color: var(--gold);
+  width: 100%;
+  max-width: 320px;
+}
+.fanOrnament svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.decoPattern {
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='220' viewBox='0 0 180 220'><path d='M 0 220 L 0 200 Q 90 110 180 200 L 180 220 Z' fill='%23082520'/><path d='M 0 200 Q 90 110 180 200' fill='none' stroke='%23B8935A' stroke-width='1.2' opacity='0.4'/><g stroke='%23C4A27A' stroke-width='1.8' fill='none' stroke-linecap='round' opacity='0.85'><line x1='90' y1='200' x2='90' y2='35'/><line x1='90' y1='200' x2='70' y2='40'/><line x1='90' y1='200' x2='110' y2='40'/><line x1='90' y1='200' x2='50' y2='55'/><line x1='90' y1='200' x2='130' y2='55'/><line x1='90' y1='200' x2='32' y2='78'/><line x1='90' y1='200' x2='148' y2='78'/><line x1='90' y1='200' x2='20' y2='108'/><line x1='90' y1='200' x2='160' y2='108'/><line x1='90' y1='200' x2='18' y2='145'/><line x1='90' y1='200' x2='162' y2='145'/><line x1='90' y1='200' x2='28' y2='178'/><line x1='90' y1='200' x2='152' y2='178'/></g><circle cx='90' cy='202' r='11' fill='%23C4A27A'/><circle cx='87' cy='200' r='3.5' fill='%23082520' opacity='0.5'/><circle cx='10' cy='185' r='2.5' fill='%23C4A27A'/><circle cx='170' cy='185' r='2.5' fill='%23C4A27A'/><circle cx='90' cy='20' r='2' fill='%23C4A27A' opacity='0.6'/></svg>");
-  background-repeat: repeat-x;
-  background-position: bottom center;
-}
-
-.decoTitle {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: var(--cream);
-}
-.decoTitle h1 {
+/* ==================== COUPLE TITLE ==================== */
+.coupleTitle {
   font-family: var(--font-instrument), var(--font-cormorant), serif;
-  font-size: clamp(28px, 4vw, 44px);
+  font-size: clamp(30px, 4.5vw, 46px);
   font-weight: 400;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  margin: 0 0 8px 0;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: var(--cream);
+  margin: 0 0 10px 0;
+  line-height: 1.05;
 }
-.decoTitle .subtitle {
+.coupleSubtitle {
   font-family: var(--font-cormorant), serif;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: var(--gold-bright);
+  margin-bottom: 50px;
 }
 
 .goldRibbon {
@@ -672,9 +683,10 @@
     color: #1a1a1a;
     font-size: 12pt;
   }
-  .decoHeader, .goldRibbon, .backTop { display: none; }
+  .heroPhoto, .goldRibbon, .backTop, .fanOrnament { display: none; }
   .rosLabel { padding-top: 0; }
-  .rosLabel h2, .sectionTitle, .sectionNumber, .decoTitle h1 { color: #0E3B2E; }
+  .rosLabel h2, .sectionTitle, .sectionNumber, .coupleTitle { color: #0E3B2E; }
+  .coupleSubtitle { color: #A88659; margin-bottom: 30px; }
   .section { page-break-inside: avoid; margin-bottom: 30pt; }
   .sectionHeader { break-after: avoid; }
   .paula { border-left-color: #A88659; }

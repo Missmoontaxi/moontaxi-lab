@@ -1,5 +1,31 @@
+import Image from 'next/image'
 import styles from './peanut.module.css'
 import BackToTop from './BackToTop'
+
+// Refined gold fan ornament — single fleuron used as a transition between
+// the hero photo and the title. Replaces the previous repeating fan banner.
+function FanOrnament() {
+  return (
+    <div className={styles.fanOrnament} aria-hidden="true">
+      <svg viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="55" x2="100" y2="55" stroke="currentColor" strokeWidth="0.7" opacity="0.5" />
+        <line x1="180" y1="55" x2="280" y2="55" stroke="currentColor" strokeWidth="0.7" opacity="0.5" />
+        <path d="M 110 55 Q 140 28 170 55" fill="none" stroke="currentColor" strokeWidth="0.6" opacity="0.45" />
+        <g stroke="currentColor" strokeWidth="1.1" strokeLinecap="round">
+          <line x1="140" y1="58" x2="140" y2="20" />
+          <line x1="140" y1="58" x2="127" y2="22" />
+          <line x1="140" y1="58" x2="153" y2="22" />
+          <line x1="140" y1="58" x2="116" y2="28" />
+          <line x1="140" y1="58" x2="164" y2="28" />
+          <line x1="140" y1="58" x2="108" y2="36" />
+          <line x1="140" y1="58" x2="172" y2="36" />
+        </g>
+        <circle cx="140" cy="62" r="5.5" fill="currentColor" />
+        <circle cx="138" cy="60.5" r="1.4" fill="#082520" opacity="0.5" />
+      </svg>
+    </div>
+  )
+}
 
 // ====================================================================
 // Component primitives — keep all the run-of-show building blocks here
@@ -122,18 +148,25 @@ function Callout({ label, children }: { label?: string; children: React.ReactNod
 export default function PeanutPage() {
   return (
     <div className={styles.peanut}>
-      {/* Art deco header */}
-      <header className={styles.decoHeader}>
-        <div className={styles.decoPattern} />
-        <div className={styles.decoTitle}>
-          <h1>Paddy &amp; Amanda</h1>
-          <div className={styles.subtitle}>May 2, 2026 · Madison, WI</div>
-        </div>
-      </header>
+      {/* Hero photo */}
+      <div className={styles.heroPhoto}>
+        <Image
+          src="/peanut/hero.webp"
+          alt="Paddy and Amanda peeking out from behind plants"
+          width={2880}
+          height={1280}
+          priority
+          sizes="100vw"
+          className={styles.heroImage}
+        />
+      </div>
       <div className={styles.goldRibbon} />
 
       {/* Title strip */}
       <section className={styles.rosLabel}>
+        <FanOrnament />
+        <h1 className={styles.coupleTitle}>Paddy &amp; Amanda</h1>
+        <div className={styles.coupleSubtitle}>May 2, 2026 · Madison, WI</div>
         <div className={styles.eyebrow}>Ceremony</div>
         <h2>Run of Show</h2>
         <div className={styles.detailsStrip}>
@@ -181,32 +214,6 @@ export default function PeanutPage() {
             <li><a href="#sec-12"><span>Marriage License</span><span className={styles.duration}>immediately after</span></a></li>
           </ol>
         </nav>
-
-        {/* Legend */}
-        <section className={styles.legend}>
-          <h3>How to read this document</h3>
-          <dl className={styles.legendGrid}>
-            <dt>Paula:</dt>
-            <dd>Paula speaks these words aloud to the room.</dd>
-            <dt>Paddy: / Amanda:</dt>
-            <dd>The couple speaks — vows, ring exchange, repeat-after-me.</dd>
-            <dt>♪ Music cue</dt>
-            <dd>Music starts or stops. Coordinate with DJ or playlist.</dd>
-            <dt>[ Stage direction ]</dt>
-            <dd>Movement, positioning, physical actions. Not spoken.</dd>
-            <dt>Applause · Cheer</dt>
-            <dd>Expected audience reactions. For pacing, not scripted.</dd>
-            <dt>— Pause —</dt>
-            <dd>Intentional beat. Let the moment land before continuing.</dd>
-            <dt className={styles.legendLegal}>● Legally required</dt>
-            <dd>Cannot be cut or significantly changed. Required by Wisconsin law.</dd>
-          </dl>
-          <div className={styles.feedbackNote}>
-            Read this through and flag anything that feels off, missing, or not-you.
-            <br />
-            The placeholders are decisions still to come. Everything else is moveable.
-          </div>
-        </section>
 
         {/* 0 — Ring Warming */}
         <Section num="00" title="Pre-ceremony · Ring Warming" duration="Before 4:30 PM" id="sec-0">
