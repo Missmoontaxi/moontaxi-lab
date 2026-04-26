@@ -119,14 +119,14 @@ function Placeholder({
 }: {
   tag: string
   title: string
-  children: React.ReactNode
+  children?: React.ReactNode
   preview?: React.ReactNode
 }) {
   return (
     <div className={styles.placeholder}>
       <div className={styles.placeholderTag}>{tag}</div>
       <div className={styles.placeholderTitle}>{title}</div>
-      <div className={styles.placeholderBody}>{children}</div>
+      {children && <div className={styles.placeholderBody}>{children}</div>}
       {preview && <div className={styles.placeholderPreview}>{preview}</div>}
     </div>
   )
@@ -195,11 +195,11 @@ export default function PeanutPage() {
           <div className={styles.eyebrow}>The Order of Events</div>
           <ol>
             <li><a href="#sec-0"><span>Ring Warming</span><span className={styles.duration}>pre-4:30</span></a></li>
-            <li><a href="#sec-1"><span>Welcome</span><span className={styles.duration}>~1 min</span></a></li>
+            <li><a href="#sec-1"><span>Begin</span><span className={styles.duration}>~1 min</span></a></li>
             <li><a href="#sec-2"><span>Paddy&apos;s Entrance</span><span className={styles.duration}>~1 min</span></a></li>
             <li><a href="#sec-3"><span>Processional</span><span className={styles.duration}>3–5 min</span></a></li>
             <li><a href="#sec-4"><span>Media Moment</span><span className={styles.duration}>~30 sec</span></a></li>
-            <li><a href="#sec-5"><span>Officiant Welcome &amp; Speech</span><span className={styles.duration}>~4 min</span></a></li>
+            <li><a href="#sec-5"><span>Officiant Speech</span><span className={styles.duration}>~4 min</span></a></li>
             <li><a href="#sec-6"><span>Exchange of Vows</span><span className={styles.duration}>3–5 min</span></a></li>
             <li><a href="#sec-7"><span>Exchange of Rings</span><span className={styles.duration}>~2 min</span></a></li>
             <li><a href="#sec-8"><span>Pronouncement</span><span className={styles.duration}>~1 min</span></a></li>
@@ -225,8 +225,8 @@ export default function PeanutPage() {
           <Stage>Sarah supervises the rings&apos; passage through seated guests.</Stage>
         </Section>
 
-        {/* 1 — Welcome */}
-        <Section num="01" title="Welcome" duration="~1 minute" id="sec-1">
+        {/* 1 — Begin */}
+        <Section num="01" title="Begin" duration="~1 minute" id="sec-1">
           <Stage>Paula in position at the front, center.</Stage>
           <Paula>&ldquo;Good afternoon, friends, family, loved ones. Are we ready to get this magic started?&rdquo;</Paula>
           <Stage>Beat — read the room.</Stage>
@@ -316,9 +316,6 @@ export default function PeanutPage() {
 
         {/* 4 — Media Moment */}
         <Section num="04" title="Media Moment" duration="~30 seconds" id="sec-4">
-          <Callout label="Phones out — briefly">
-            This is the <em>only</em> time during the ceremony guests can have phones out.
-          </Callout>
           <Paula>&ldquo;OK, now is the time to capture the moment.&rdquo;</Paula>
           <Stage>Paddy and Amanda do a little pose.</Stage>
           <Paula>
@@ -328,8 +325,8 @@ export default function PeanutPage() {
           <Stage>Guests sit.</Stage>
         </Section>
 
-        {/* 5 — Officiant Welcome & Speech */}
-        <Section num="05" title={<>Officiant Welcome &amp; Speech</>} duration="~4 minutes" id="sec-5">
+        {/* 5 — Officiant Speech */}
+        <Section num="05" title="Officiant Speech" duration="~4 minutes" id="sec-5">
           <Paula>
             &ldquo;I&apos;m Paula McMahon, Paddy&apos;s aunt, batting coach and co-conspirator. I did get ordained for
             this, so for the next 20 minutes I&apos;ve got some real authority here.&rdquo;
@@ -339,20 +336,7 @@ export default function PeanutPage() {
             into who they are today. Thank you all for taking the time to be here. This is a very special day, and
             you are all part of the reason why.&rdquo;
           </Paula>
-          <Placeholder
-            tag="Coming from Paula"
-            title="The speech lives here"
-            preview={
-              <em>
-                &ldquo;I&apos;ve known Paddy his whole life, and there are a few things that have always been true about
-                him…&rdquo;
-              </em>
-            }
-          >
-            Paula is still writing this. It&apos;s the personal heart of the ceremony — stories about Paddy and Amanda,
-            how they got here, and why this wedding matters to the people in the room. Full text will be shared with the
-            wedding party before the rehearsal.
-          </Placeholder>
+          <Placeholder tag="Coming from Paula" title="The speech lives here" />
           <Stage>Sarah collects rings and passes them to Best Man, Danny, ahead of the vows.</Stage>
         </Section>
 
@@ -414,7 +398,7 @@ export default function PeanutPage() {
           <Pause>pause · hold this beat</Pause>
           <div className={styles.paula}>
             <div className={`${styles.line} ${styles.pronouncementBig}`}>
-              &ldquo;I now pronounce you <strong>husband and wife</strong>.&rdquo;
+              &ldquo;I now pronounce you <strong>HUSBAND AND WIFE</strong>.&rdquo;
             </div>
           </div>
           <Reaction>Guests cheer</Reaction>

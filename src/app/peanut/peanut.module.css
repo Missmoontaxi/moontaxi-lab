@@ -91,8 +91,8 @@
 }
 .coupleSubtitle {
   font-family: var(--font-cormorant), serif;
-  font-size: 12px;
-  letter-spacing: 0.4em;
+  font-size: 15px;
+  letter-spacing: 0.36em;
   text-transform: uppercase;
   color: var(--gold-bright);
   margin-bottom: 50px;
@@ -126,8 +126,8 @@
 }
 .eyebrow {
   font-family: var(--font-cormorant), serif;
-  font-size: 12px;
-  letter-spacing: 0.5em;
+  font-size: 15px;
+  letter-spacing: 0.4em;
   text-transform: uppercase;
   color: var(--gold-bright);
   margin-bottom: 20px;
@@ -195,10 +195,10 @@
   margin: 40px 0 60px;
 }
 .toc .eyebrow {
-  font-size: 11px;
-  letter-spacing: 0.4em;
+  font-size: 15px;
+  letter-spacing: 0.36em;
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 .toc ol {
   list-style: none;
