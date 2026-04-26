@@ -18,13 +18,18 @@ const instrument = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: 'Peanut · Paddy & Amanda · Run of Show',
-  description: 'Ceremony run of show for the wedding of Paddy McMahon and Amanda Morrow. May 2, 2026, Madison WI.',
+  title: 'P&A · Ceremony Run of Show',
+  description: 'Ceremony run of show for Paddy McMahon and Amanda Morrow. May 2, 2026, Madison WI.',
   robots: { index: false, follow: false },
   openGraph: {
-    title: 'Paddy & Amanda · Run of Show',
-    description: 'Ceremony run of show for the wedding of Paddy McMahon and Amanda Morrow. May 2, 2026.',
+    title: 'P&A · Ceremony Run of Show',
+    description: 'May 2, 2026 · The Tinsmith, Madison WI.',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'P&A · Ceremony Run of Show',
+    description: 'May 2, 2026 · The Tinsmith, Madison WI.',
   },
 }
 
