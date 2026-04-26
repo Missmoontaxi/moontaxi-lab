@@ -186,12 +186,7 @@ export default function PeanutPage() {
             <div className={styles.label}>Officiant</div>
             <div className={styles.value}>Paula McMahon</div>
           </div>
-          <div className={styles.detail}>
-            <div className={styles.label}>Duration</div>
-            <div className={styles.value}>20–25 minutes</div>
-          </div>
         </div>
-        <div className={styles.docStatus}>Draft v4 · For review · Last updated April 22, 2026</div>
       </section>
 
       <div className={styles.container}>
@@ -203,8 +198,8 @@ export default function PeanutPage() {
             <li><a href="#sec-1"><span>Welcome</span><span className={styles.duration}>~1 min</span></a></li>
             <li><a href="#sec-2"><span>Paddy&apos;s Entrance</span><span className={styles.duration}>~1 min</span></a></li>
             <li><a href="#sec-3"><span>Processional</span><span className={styles.duration}>3–5 min</span></a></li>
-            <li><a href="#sec-4"><span>Paula&apos;s Kickoff</span><span className={styles.duration}>1–2 min</span></a></li>
-            <li><a href="#sec-5"><span>Officiant Speech</span><span className={styles.duration}>2–3 min</span></a></li>
+            <li><a href="#sec-4"><span>Media Moment</span><span className={styles.duration}>~30 sec</span></a></li>
+            <li><a href="#sec-5"><span>Officiant Welcome &amp; Speech</span><span className={styles.duration}>~4 min</span></a></li>
             <li><a href="#sec-6"><span>Exchange of Vows</span><span className={styles.duration}>3–5 min</span></a></li>
             <li><a href="#sec-7"><span>Exchange of Rings</span><span className={styles.duration}>~2 min</span></a></li>
             <li><a href="#sec-8"><span>Pronouncement</span><span className={styles.duration}>~1 min</span></a></li>
@@ -281,7 +276,11 @@ export default function PeanutPage() {
           <MusicCue label="Music stops · Bride's entrance">
             <Track>Archie, Marry Me</Track> fades out
           </MusicCue>
-          <Callout label="Media Moment">
+        </Section>
+
+        {/* 4 — Media Moment */}
+        <Section num="04" title="Media Moment" duration="~30 seconds" id="sec-4">
+          <Callout label="Phones out — briefly">
             This is the <em>only</em> time during the ceremony guests can have phones out.
           </Callout>
           <Paula>&ldquo;OK, now is the time to capture the moment.&rdquo;</Paula>
@@ -293,36 +292,17 @@ export default function PeanutPage() {
           <Stage>Guests sit.</Stage>
         </Section>
 
-        {/* 4 — Kickoff */}
-        <Section num="04" title="Paula's Kickoff" duration="1–2 minutes" id="sec-4">
-          <Placeholder
-            tag="Draft · In progress"
-            title="Paula is finishing this opening"
-            preview={
-              <>
-                <em>&ldquo;Thank you all for being here. I&apos;m Paula, Paddy&apos;s aunt and batting coach…&rdquo;</em>
-                <br />
-                <br />
-                <em>
-                  &ldquo;We are all here from wherever we&apos;ve traveled because Paddy and Amanda asked us to witness
-                  something special. Not just to attend a party. To be part of the moment these two look each other in
-                  the eye and say: this is the person. This is my person.&rdquo;
-                </em>
-                <br />
-                <br />
-                <Pause>pause</Pause>
-                <em>
-                  &ldquo;That matters. You being here matters. This room is full of everyone who loves them.&rdquo;
-                </em>
-              </>
-            }
-          >
-            The welcome remarks set the tone. Draft is close, not final. Preview below — full text coming soon.
-          </Placeholder>
-        </Section>
-
-        {/* 5 — Officiant Speech */}
-        <Section num="05" title="Officiant Speech" duration="2–3 minutes" id="sec-5">
+        {/* 5 — Officiant Welcome & Speech */}
+        <Section num="05" title={<>Officiant Welcome &amp; Speech</>} duration="~4 minutes" id="sec-5">
+          <Paula>
+            &ldquo;I&apos;m Paula McMahon, Paddy&apos;s aunt, batting coach and co-conspirator. I did get ordained for
+            this, so for the next 20 minutes I&apos;ve got some real authority here.&rdquo;
+          </Paula>
+          <Paula>
+            &ldquo;I&apos;m truly honored to stand here, surrounded by the people who have shaped Paddy and Amanda
+            into who they are today. Thank you all for taking the time to be here. This is a very special day, and
+            you are all part of the reason why.&rdquo;
+          </Paula>
           <Placeholder
             tag="Coming from Paula"
             title="The speech lives here"

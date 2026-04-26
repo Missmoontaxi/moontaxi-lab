@@ -16,6 +16,8 @@
   --cream-dim: #BDB29B;
   --cream-soft: #D8CCB5;
   --ivory: #FCF8EE;
+  --paddy: #9CC0BC;
+  --amanda: #D4A292;
   --red-legal: #C67868;
   --applause: #8A9F8A;
 
@@ -155,17 +157,17 @@
 .detail { text-align: center; }
 .detail .label {
   font-family: var(--font-cormorant), serif;
-  font-size: 10px;
-  letter-spacing: 0.35em;
+  font-size: 12px;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--cream-dim);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .detail .value {
   font-family: var(--font-cormorant), serif;
-  font-size: 16px;
+  font-size: 19px;
   color: var(--cream);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 .docStatus {
@@ -361,6 +363,19 @@
 .couple .line {
   font-size: 19px;
   color: var(--cream);
+}
+
+.couple[data-speaker="Paddy"] {
+  border-left-color: var(--paddy);
+}
+.couple[data-speaker="Paddy"]::before {
+  color: var(--paddy);
+}
+.couple[data-speaker="Amanda"] {
+  border-left-color: var(--amanda);
+}
+.couple[data-speaker="Amanda"]::before {
+  color: var(--amanda);
 }
 
 .stage {
