@@ -255,12 +255,48 @@ export default function PeanutPage() {
             <Track>Dancing Queen</Track>
           </MusicCue>
           <ol className={styles.processionalList}>
-            <li>Danny McMahon with flower girl Libby Lou McMahon</li>
-            <li>Taylor Morrow (Brother of Honor) with Katelyn Hoffman</li>
-            <li>Alex Pogosky and Jack Ries</li>
-            <li>Lu Corporan and Lucas Heyvaert</li>
-            <li>Elizabeth Heckmüller and Krista Owens</li>
-            <li>Megan Meloon and Bailey O&apos;Malley</li>
+            <li>
+              <div className={styles.processionalFaces}>
+                <Image src="/peanut/wedding/danny.webp" alt="Danny McMahon" width={40} height={40} />
+                <Image src="/peanut/wedding/Libby.webp" alt="Libby Lou McMahon" width={40} height={40} />
+              </div>
+              <span className={styles.processionalText}>Danny McMahon with flower girl Libby Lou McMahon</span>
+            </li>
+            <li>
+              <div className={styles.processionalFaces}>
+                <Image src="/peanut/wedding/taylor.webp" alt="Taylor Morrow" width={40} height={40} />
+                <Image src="/peanut/wedding/Katelyn.webp" alt="Katelyn Hoffman" width={40} height={40} />
+              </div>
+              <span className={styles.processionalText}>Taylor Morrow (Brother of Honor) with Katelyn Hoffman</span>
+            </li>
+            <li>
+              <div className={styles.processionalFaces}>
+                <Image src="/peanut/wedding/Alex.webp" alt="Alex Pogosky" width={40} height={40} />
+                <Image src="/peanut/wedding/Jack.webp" alt="Jack Ries" width={40} height={40} />
+              </div>
+              <span className={styles.processionalText}>Alex Pogosky and Jack Ries</span>
+            </li>
+            <li>
+              <div className={styles.processionalFaces}>
+                <Image src="/peanut/wedding/Lu.webp" alt="Lu Corporan" width={40} height={40} />
+                <Image src="/peanut/wedding/Lucas.webp" alt="Lucas Heyvaert" width={40} height={40} />
+              </div>
+              <span className={styles.processionalText}>Lu Corporan and Lucas Heyvaert</span>
+            </li>
+            <li>
+              <div className={styles.processionalFaces}>
+                <Image src="/peanut/wedding/Elizabeth.webp" alt="Elizabeth Heckmüller" width={40} height={40} />
+                <Image src="/peanut/wedding/Krista.webp" alt="Krista Owens" width={40} height={40} />
+              </div>
+              <span className={styles.processionalText}>Elizabeth Heckmüller and Krista Owens</span>
+            </li>
+            <li>
+              <div className={styles.processionalFaces}>
+                <Image src="/peanut/wedding/Megan.webp" alt="Megan Meloon" width={40} height={40} />
+                <Image src="/peanut/wedding/Bailey.webp" alt="Bailey O'Malley" width={40} height={40} />
+              </div>
+              <span className={styles.processionalText}>Megan Meloon and Bailey O&apos;Malley</span>
+            </li>
           </ol>
           <MusicCue label="Music stops · Wedding party">
             <Track>Dancing Queen</Track> fades out

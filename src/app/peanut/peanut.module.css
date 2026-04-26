@@ -562,7 +562,7 @@
 
 .processionalList {
   margin: 18px 0;
-  padding: 16px 28px 16px 48px;
+  padding: 18px 24px;
   background: rgba(196, 162, 122, 0.04);
   counter-reset: proc;
   list-style: none;
@@ -570,18 +570,41 @@
 .processionalList li {
   list-style: none;
   counter-increment: proc;
-  padding: 6px 0;
+  padding: 10px 0;
   font-size: 17px;
   color: var(--cream);
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 .processionalList li::before {
   content: counter(proc) '.';
-  position: absolute;
-  left: -28px;
   color: var(--gold);
   font-family: var(--font-instrument), serif;
   font-style: italic;
+  flex-shrink: 0;
+  min-width: 24px;
+}
+
+.processionalFaces {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.processionalFaces img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--gold);
+  box-shadow: 0 0 0 2px var(--emerald);
+  display: block;
+}
+.processionalFaces img:not(:first-child) {
+  margin-left: -10px;
+}
+.processionalText {
+  flex: 1;
 }
 
 .licenseSteps {
