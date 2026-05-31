@@ -17,27 +17,28 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-space-black/80 backdrop-blur-sm border-b border-nebula-teal/10">
-      <div className="max-w-6xl mx-auto flex items-center justify-between">
-        <Link href="/" className="font-display text-xl text-star-white hover:text-nebula-cyan transition-colors">
-          Moontaxi Lab
-        </Link>
+    <nav className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between border-b border-lab-borderlt bg-space-black/[0.88] px-6 py-5 backdrop-blur-[14px] sm:px-10">
+      <Link
+        href="/"
+        className="font-mono text-[0.85rem] tracking-[0.04em] text-honey transition-opacity hover:opacity-80"
+      >
+        moontaxi lab
+      </Link>
 
-        <div className="flex items-center gap-8">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`text-sm tracking-wide transition-colors ${
-                pathname === link.href
-                  ? 'text-nebula-cyan'
-                  : 'text-star-white/70 hover:text-star-white'
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
+      <div className="flex items-center gap-8">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`text-[0.85rem] transition-colors ${
+              pathname === link.href
+                ? 'text-lab-text'
+                : 'text-lab-muted hover:text-lab-text'
+            }`}
+          >
+            {link.label}
+          </Link>
+        ))}
       </div>
     </nav>
   )
