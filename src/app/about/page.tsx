@@ -207,6 +207,9 @@ export default async function About() {
         {/* SELECTED ARTIFACTS */}
         <FadeIn className="border-b border-lab-borderlt py-[4.5rem]">
           <SectionLabel>{'// selected artifacts'}</SectionLabel>
+          <p className="mb-7 max-w-[560px] text-[0.95rem] leading-[1.6] text-lab-muted">
+            Public artifacts, event platforms, sites, and tools the Lab has shipped and deployed.
+          </p>
           <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-[0.9rem]">
             {repos.map((repo) => {
               const inner = (
@@ -339,8 +342,10 @@ export default async function About() {
             Bring the Lab into your plan.
           </h2>
           <p className="mb-7 max-w-[540px] text-[0.95rem] leading-[1.6] text-lab-muted">
-            Advisory, embedded operating work, or a system that needs to ship. If you’re building
-            something in AI and want a powerhouse operator who’ll lock in with you, start here.
+            Advisory, embedded operating work, or a system that needs to ship. The Lab works best
+            with AI-native teams who have early traction and want a scale operator in the build with
+            them shaping strategy, standing up the systems, and staying in the loop until it runs. If
+            that’s where you are, start here.
           </p>
           <div className="mb-12 flex flex-wrap gap-2.5">
             <a
