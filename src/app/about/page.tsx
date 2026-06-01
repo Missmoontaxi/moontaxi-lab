@@ -132,7 +132,6 @@ export default async function About() {
   const signalStats = [
     { n: githubStats.contributions, l: 'contributions in 2026' },
     { n: githubStats.activeRepos, l: 'active repositories' },
-    { n: githubStats.commitsThisMonth, l: 'commits this month' },
   ]
 
   return (
