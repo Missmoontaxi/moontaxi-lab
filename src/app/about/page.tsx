@@ -207,7 +207,7 @@ export default async function About() {
         {/* SELECTED ARTIFACTS */}
         <FadeIn className="border-b border-lab-borderlt py-[4.5rem]">
           <SectionLabel>{'// selected artifacts'}</SectionLabel>
-          <p className="mb-7 max-w-[560px] text-[0.95rem] leading-[1.6] text-lab-muted">
+          <p className="mb-7 max-w-[560px] text-[0.95rem] leading-[1.6] text-lab-muted md:max-w-none md:whitespace-nowrap">
             Public artifacts, event platforms, sites, and tools the Lab has shipped and deployed.
           </p>
           <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-[0.9rem]">
