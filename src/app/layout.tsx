@@ -23,13 +23,13 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Moontaxi Lab',
   description:
-    'The AI-native operating studio of Paula McMahon — advisory practice, project archive, and a launchpad for useful things.',
+    'The AI-native operating studio of Paula McMahon. Advisory practice, project archive, and a launchpad for useful things.',
   keywords: ['AI-native advisory', 'GTM', 'scale operations', 'builder portfolio', 'Paula McMahon'],
   authors: [{ name: 'Moontaxi Lab LLC' }],
   openGraph: {
     title: 'Moontaxi Lab',
     description:
-      'The AI-native operating studio of Paula McMahon — advisory practice, project archive, and a launchpad for useful things.',
+      'The AI-native operating studio of Paula McMahon. Advisory practice, project archive, and a launchpad for useful things.',
     url: 'https://www.moontaxilab.com',
     siteName: 'Moontaxi Lab',
     type: 'website',
