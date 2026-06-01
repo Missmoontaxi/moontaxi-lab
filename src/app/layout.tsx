@@ -21,6 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.moontaxilab.com'),
   title: 'Moontaxi Lab',
   description:
     'The AI-native operating studio of Paula McMahon. Advisory practice, project archive, and a launchpad for useful things.',
