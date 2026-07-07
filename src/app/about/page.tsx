@@ -115,12 +115,13 @@ const stack = [
   'MCP',
   'n8n',
   'Notion',
+  'Attio',
   'Codex',
 ]
 
 function SectionLabel({ children }: { children: string }) {
   return (
-    <p className="mb-8 flex items-center gap-3 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-lab-dim">
+    <p className="mb-8 flex items-center gap-3 font-mono text-sm sm:text-base uppercase tracking-[0.14em] text-lab-text">
       {children}
       <span className="h-px flex-1 bg-lab-border" />
     </p>
@@ -271,7 +272,7 @@ export default async function About() {
         {/* IN THE LAB */}
         <FadeIn className="border-b border-lab-borderlt py-[4.5rem]">
           <SectionLabel>{'// in the lab'}</SectionLabel>
-          <p className="mb-7 max-w-[520px] text-[0.9rem] italic leading-[1.6] text-lab-muted">
+          <p className="mb-7 text-[0.9rem] italic leading-[1.6] text-lab-muted">
             Some things are in motion. Not ready to surface. Experiments, tools, and a few
             things that don’t have names yet.
           </p>
@@ -340,7 +341,7 @@ export default async function About() {
           <h2 className="mb-3 text-[clamp(1.6rem,3.5vw,2.2rem)] font-semibold tracking-[-0.02em] text-white">
             Bring the Lab into your plan.
           </h2>
-          <p className="mb-7 max-w-[540px] text-[0.95rem] leading-[1.6] text-lab-muted">
+          <p className="mb-7 text-[0.95rem] leading-[1.6] text-lab-muted">
             Advisory, embedded operating work, or a system that needs to ship. The Lab works best
             with AI-native teams who have early traction and want a scale operator in the build with
             them shaping strategy, standing up the systems, and staying in the loop until it runs. If
