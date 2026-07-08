@@ -162,7 +162,7 @@ export default async function About() {
           </h1>
           <p className="mb-2.5 max-w-[660px] text-[clamp(1.1rem,2.5vw,1.35rem)] leading-[1.55] text-lab-text">
             Where <em className="not-italic text-honey">experiments</em> become systems, and a
-            few of them leave the building.
+            few move on to greater things.
           </p>
           <p className="mb-10 text-base italic text-lab-muted">
             Founders, builders, and the AI-curious pass through. Some stay for a workshop. Some
