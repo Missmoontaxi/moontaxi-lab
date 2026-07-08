@@ -25,15 +25,15 @@ const langDot: Record<string, string> = {
 const pillars = [
   {
     k: 'Learn',
-    t: 'Trainings and working sessions. The Lab runs rooms where operators, founders, and teams get their hands on AI tools and leave with workflows that actually run.',
+    t: 'Trainings and working sessions. The Lab runs rooms where operators, founders, and teams get their hands on AI tools and leave with workflows and websites.',
   },
   {
     k: 'Build',
-    t: 'Operating systems shipped as code: agents, skills, internal tools, brand guides, event platforms, and the occasional public site.',
+    t: 'Operating systems shipped as code including agents, skills, internal tools, brand guides, event platforms, and the occasional public site.',
   },
   {
     k: 'Collaborate',
-    t: 'Side-by-side experiments with small startups and friends of the Lab. Test artifacts, borrowed tools, shared launches. Some of it public. Most of it stays in the lab.',
+    t: 'Side-by-side experiments with small startups and Friends of the Lab. Test artifacts, borrowed tools, shared launches. Some of it public. Most of it stays in the lab.',
   },
 ]
 
