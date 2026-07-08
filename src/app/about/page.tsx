@@ -24,16 +24,16 @@ const langDot: Record<string, string> = {
 
 const pillars = [
   {
-    k: 'Strategy',
-    t: 'Partnerships, distribution, GTM architecture, positioning, and the operating model that turns early traction into a repeatable growth engine.',
+    k: 'Learn',
+    t: 'Trainings and working sessions. The Lab runs rooms where operators, founders, and teams get their hands on AI tools and leave with workflows that actually run.',
   },
   {
     k: 'Build',
-    t: 'Operating systems shipped as code with agents, skills, internal tools, brand guides, event platforms, and the occasional public site.',
+    t: 'Operating systems shipped as code: agents, skills, internal tools, brand guides, event platforms, and the occasional public site.',
   },
   {
     k: 'Collaborate',
-    t: 'Operator-in-the-loop. Hands on alongside your team, within your community and with strategic partners.',
+    t: 'Side-by-side experiments with small startups and friends of the Lab. Test artifacts, borrowed tools, shared launches. Some of it public. Most of it stays in the lab.',
   },
 ]
 
@@ -42,6 +42,7 @@ const systems = [
   'Event operating systems',
   'Community-to-pipeline engines',
   'Prospect research skills',
+  'Workshops & trainings',
   'Partner ecosystems',
   'Company foundation',
   'Resource centers',
@@ -66,8 +67,16 @@ const repos = [
     live: true,
   },
   {
+    name: 'eve-radar',
+    desc: 'Event intelligence for a founding GTM team. A Claude Code skill scores the AI event landscape; the radar renders it.',
+    lang: 'js',
+    langLabel: 'JavaScript',
+    href: 'https://github.com/Missmoontaxi/eve-radar',
+    live: true,
+  },
+  {
     name: 'moontaxi-lab',
-    desc: 'This. GTM + scale ops advisory practice for AI-native companies.',
+    desc: 'This. The Lab’s own console, designed and shipped in Claude Code.',
     lang: 'ts',
     langLabel: 'TypeScript',
     href: 'https://github.com/Missmoontaxi/moontaxi-lab',
@@ -142,24 +151,25 @@ export default async function About() {
         <section className="border-b border-lab-borderlt pb-[4.5rem] pt-[6.5rem] sm:pt-[8.5rem]">
           <p className="mb-7 flex items-center gap-2 font-mono text-[0.72rem] uppercase tracking-[0.14em] text-honey">
             <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-honey" />
-            AI-native operating studio
+            AI-native lab and workshop
           </p>
           <h1 className="mb-7 text-[clamp(2.6rem,7vw,4.2rem)] font-semibold leading-[1.05] tracking-[-0.025em] text-white">
-            Growth strategy.
-            <br />
-            Scale ops.
+            Learn.
             <br />
             Build.
+            <br />
+            Launch.
           </h1>
           <p className="mb-2.5 max-w-[660px] text-[clamp(1.1rem,2.5vw,1.35rem)] leading-[1.55] text-lab-text">
-            Helping <em className="not-italic text-honey">AI-native companies</em> turn early
-            traction into durable growth.
+            Where <em className="not-italic text-honey">experiments</em> become systems, and a
+            few move on to greater things.
           </p>
           <p className="mb-10 text-base italic text-lab-muted">
-            Working alongside leaders and founders, not from a deck.
+            Founders, builders, and the AI-curious pass through. Some stay for a workshop. Some
+            catch a ride.
           </p>
           <div className="flex flex-wrap gap-2">
-            {['GTM Architecture', 'Ecosystem OS', 'Operator-in-the-loop'].map((t) => (
+            {['Experiments', 'Training rooms', 'Collaborations'].map((t) => (
               <span
                 key={t}
                 className="rounded-[3px] border border-lab-border px-2.5 py-1.5 font-mono text-[0.68rem] uppercase tracking-[0.06em] text-lab-muted"
@@ -189,8 +199,8 @@ export default async function About() {
         <FadeIn className="border-b border-lab-borderlt py-[4.5rem]">
           <SectionLabel>{'// representative systems'}</SectionLabel>
           <p className="mb-7 max-w-[560px] text-[0.95rem] leading-[1.6] text-lab-muted">
-            The kind of AI-native operating systems and workflows the Lab builds. Specifics stay
-            confidential, these are the patterns.
+            The kinds of systems that get built here. Specifics stay in the lab, these are the
+            patterns.
           </p>
           <div className="flex flex-wrap gap-2">
             {systems.map((s) => (
@@ -339,13 +349,12 @@ export default async function About() {
         <FadeIn className="py-[4.5rem]">
           <SectionLabel>{'// collaborate'}</SectionLabel>
           <h2 className="mb-3 text-[clamp(1.6rem,3.5vw,2.2rem)] font-semibold tracking-[-0.02em] text-white">
-            Bring the Lab into your plan.
+            Catch a ride.
           </h2>
           <p className="mb-7 text-[0.95rem] leading-[1.6] text-lab-muted">
-            Advisory, embedded operating work, or a system that needs to ship. The Lab works best
-            with AI-native teams who have early traction and want a scale operator in the build with
-            them shaping strategy, standing up the systems, and staying in the loop until it runs. If
-            that’s where you are, start here.
+            The Lab keeps a passenger seat open. A founder testing an idea, a team that wants a
+            training room, a small startup that needs a system shipped. No decks, no pitches. If
+            something here resonates, say hello.
           </p>
           <div className="mb-12 flex flex-wrap gap-2.5">
             <a

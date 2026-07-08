@@ -1,6 +1,6 @@
 # Moontaxi Lab
 
-Marketing site for my strategic advisory services, GTM and scale operations for AI-native companies.
+Site for Moontaxi Lab, my AI-native lab and workshop: experiments, trainings, collaborations, and project artifacts.
 
 🌐 **Live:** [moontaxilab.com](https://moontaxilab.com)
 
@@ -30,7 +30,7 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 ## About
 
-Moontaxi Lab is my strategic advisory practice including GTM strategy, operations, sales enablement, and operator-level work for founders scaling AI-native companies. Currently engaged with [Eve](https://helloeve.co).
+Moontaxi Lab is my workshop and launchpad: learning, experiments, trainings, and hands-on collaborations with small startups. Day job: Partnerships & Ecosystem at [Eve](https://helloeve.co).
 
 ---
 

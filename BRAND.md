@@ -7,9 +7,9 @@ All values below are pulled from the live site so the system stays in sync with 
 
 ## 1. Brand essence
 
-**Moontaxi Lab is an AI-native operating studio** — Paula McMahon's advisory practice, project
-archive, and launchpad for useful things. It helps AI-native companies turn early traction into
-durable growth, working *alongside* leaders and founders rather than from a deck.
+**Moontaxi Lab is an AI-native lab and workshop**: Paula McMahon's place to learn, experiment,
+collaborate, and launch useful things. Experiments become systems here; trainings, test artifacts,
+and small-startup collaborations pass through. The Lab invites, it does not pitch.
 
 The visual identity is a **dark, cosmic, instrument-panel** aesthetic: a builder's console, not a
 glossy agency site. Mysterious skin, legible skeleton — the surface feels like mission control,
@@ -23,7 +23,7 @@ warm, editorial, and teal-accented. The Lab is the opposite — near-black, tech
 
 ## 2. Voice & tone
 
-- **Direct and operational.** Short declaratives. "Growth strategy. Scale ops. Build."
+- **Direct and operational.** Short declaratives. "Learn. Build. Launch."
 - **Entity voice, not first-person.** The Lab does the work ("the Lab builds…"), not "I build…".
 - **Confident, not salesy.** State capability plainly; let the work imply the pitch.
 - **A thread of mystery.** Hint that there's more in the lab than what's public ("The rest stays
@@ -154,15 +154,15 @@ In Next.js App Router, drop `icon.svg` / `apple-icon.png` into `src/app/` to aut
 
 Current OG metadata (in `src/app/layout.tsx`):
 - **Title:** `Moontaxi Lab`
-- **Description:** "The AI-native operating studio of Paula McMahon — advisory practice, project
-  archive, and a launchpad for useful things." *(note: rework the em-dash if regenerating copy)*
+- **Description:** "The AI-native lab of Paula McMahon. Experiments, trainings, collaborations,
+  and a launchpad for useful things."
 - **URL:** `https://www.moontaxilab.com`
 
 **OG image (TO BUILD):**
 - **Size:** 1200×630px.
 - **Background:** `space-black #08080c`, optional faint instrument-panel texture/grid.
 - **Wordmark:** `moontaxi lab` in honey mono, lower-left or centered.
-- **Headline:** a short Inter line in star-white, e.g. *"AI-native operating studio."*
+- **Headline:** a short Inter line in star-white, e.g. *"AI-native lab and workshop."*
 - **Accent:** one honey pulse dot or `//` label for signal. Keep it sparse.
 - Provide a 1×1 variant (1080×1080) for square social.
 
