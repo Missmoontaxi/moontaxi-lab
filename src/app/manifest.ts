@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Moontaxi Lab',
     short_name: 'Moontaxi Lab',
     description:
-      'The AI-native operating studio of Paula McMahon. Advisory practice, project archive, and a launchpad for useful things.',
+      'The AI-native lab of Paula McMahon. Experiments, trainings, collaborations, and a launchpad for useful things.',
     start_url: '/',
     display: 'standalone',
     background_color: '#08080c',
